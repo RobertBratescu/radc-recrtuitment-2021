@@ -174,9 +174,9 @@ body {
 }
 
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor .arrow {
-  margin-top: 40px;
-  -webkit-animation: arrow-big-move 1.5s infinite 0s ease-in-out;
-          animation: arrow-big-move 1.5s infinite 0s ease-in-out;
+  margin-top: 50px;
+  -webkit-animation: arrow-big-move 3.5s infinite 0s ease-in-out;
+          animation: arrow-big-move 3.5s infinite 0s ease-in-out;
   position: relative;
   width: 25px;
   height: 25px;
@@ -200,7 +200,138 @@ body {
           transform: rotate(45deg) translateY(3px);
 }
 
+.radc-2021-wrapper .wrap-container .infographic-container {
+  margin: 10vh 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (max(500px, 46vh))[3];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(3, max(500px, 46vh))/repeat(2, 1fr);
+  grid-gap: 33px;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box {
+  position: relative;
+  padding: 4em;
+  color: white;
+  z-index: 1;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #86bc25;
+  opacity: 1;
+  z-index: -1;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: 22%;
+  background-position-y: 30%;
+  position: absolute;
+  z-index: -2;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box h2 {
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-bottom: 0.6em;
+  line-height: 1.2;
+  z-index: 99;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box p {
+  width: 80%;
+  font-size: 1rem;
+  z-index: 99;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box p:not(:first-child) {
+  margin-top: 1em;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box .svg-icon {
+  position: absolute;
+  opacity: 0.6;
+  z-index: 99;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box:not(.career) .svg-icon {
+  right: 2em;
+  bottom: 2em;
+  width: 100px;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career .svg-icon {
+  left: 4em;
+  bottom: 2em;
+  width: 150px;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career h2 {
+  margin-bottom: 1.5em;
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:after {
+  background: #046a38;
+  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:before {
+  background-image: url("/img/attention_img.png");
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:after {
+  background: #046a38;
+  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:before {
+  background-image: url("/img/growth_img.png");
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:after {
+  background: #86bc25;
+  background: linear-gradient(130deg, #86bc25 40%, rgba(134, 188, 37, 0.5) 100%);
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:before {
+  background-image: url("/img/multicultural_img.png");
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:after {
+  background: #046a38;
+  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:before {
+  background-image: url("/img/professional_img.png");
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:after {
+  background: #86bc25;
+  background: linear-gradient(130deg, #86bc25 40%, rgba(134, 188, 37, 0.5) 100%);
+}
+
 .radc-2021-wrapper .wrap-container .job-description-wrapper {
+  margin-top: 10vh;
   position: relative;
   background-color: #171717;
   color: white;

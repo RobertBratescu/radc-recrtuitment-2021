@@ -125,8 +125,8 @@ body {
             position: relative;
           }
           .arrow {
-            margin-top: 40px;
-            animation: arrow-big-move 1.5s infinite 0s ease-in-out;
+            margin-top: 50px;
+            animation: arrow-big-move 3.5s infinite 0s ease-in-out;
             position: relative;
             width: 25px;
             height: 25px;
@@ -149,8 +149,134 @@ body {
       }
     }
 
+    //INFOGRAPHIC
+    .infographic-container {
+      margin: 10vh 0;
+      display: grid;
+      grid-template: repeat(3, #{"max(#{500px}, #{46vh})"}) / repeat(2, 1fr);
+      grid-gap: 33px;
+
+      .infographic-box {
+        // background-color: $delGreen;
+        position: relative;
+        padding: 4em;
+
+        color: white;
+        z-index: 1;
+
+        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: $delGreen;
+          opacity: 1;
+          z-index: -1;
+        }
+        &:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-position-x: 22%;
+          background-position-y: 30%;
+          position: absolute;
+          z-index: -2;
+        }
+
+        h2 {
+          font-weight: 300;
+          font-size: 2.8rem;
+          margin-bottom: 0.6em;
+          line-height: 1.2;
+          z-index: 99;
+        }
+        p {
+          width: 80%;
+          font-size: 1rem;
+          z-index: 99;
+          &:not(:first-child) {
+            margin-top: 1em;
+          }
+        }
+
+        .svg-icon {
+          position: absolute;
+          opacity: 0.6;
+          z-index: 99;
+        }
+        &:not(.career) {
+          .svg-icon {
+            right: 2em;
+            bottom: 2em;
+            width: 100px;
+          }
+        }
+        &.career {
+          grid-row-start: 1;
+          grid-row-end: 3;
+          .svg-icon {
+            left: 4em;
+            bottom: 2em;
+            width: 150px;
+          }
+          h2 {
+            margin-bottom: 1.5em;
+          }
+          &:after {
+            background: rgb(4, 106, 56);
+            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+          }
+        }
+        &.attention {
+          &:before {
+            background-image: url("/img/attention_img.png");
+          }
+          &:after {
+            background: rgb(4, 106, 56);
+            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+          }
+        }
+        &.growth {
+          &:before {
+            background-image: url("/img/growth_img.png");
+          }
+          &:after {
+            background: rgb(134, 188, 37);
+            background: linear-gradient(130deg, rgba(134, 188, 37, 1) 40%, rgba(134, 188, 37, 0.5) 100%);
+          }
+        }
+        &.multi {
+          &:before {
+            background-image: url("/img/multicultural_img.png");
+          }
+          &:after {
+            background: rgb(4, 106, 56);
+            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+          }
+        }
+        &.recognition {
+          &:before {
+            background-image: url("/img/professional_img.png");
+          }
+          &:after {
+            background: rgb(134, 188, 37);
+            background: linear-gradient(130deg, rgba(134, 188, 37, 1) 40%, rgba(134, 188, 37, 0.5) 100%);
+          }
+        }
+      }
+    }
+
     //JOB DESCRIPTION
     .job-description-wrapper {
+      margin-top: 10vh;
       position: relative;
       background-color: $darkGrey;
       color: white;
