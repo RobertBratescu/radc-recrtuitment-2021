@@ -1,0 +1,413 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+body {
+  background-color: black;
+}
+
+.radc-2021-wrapper {
+  font-family: "Open Sans", sans;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: black;
+}
+
+.radc-2021-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.radc-2021-wrapper span.green,
+.radc-2021-wrapper h1.green,
+.radc-2021-wrapper h2.green,
+.radc-2021-wrapper h3.green,
+.radc-2021-wrapper h4.green,
+.radc-2021-wrapper h5.green,
+.radc-2021-wrapper h6.green,
+.radc-2021-wrapper p.green,
+.radc-2021-wrapper a.green {
+  color: #86bc25;
+}
+
+.radc-2021-wrapper span.blue,
+.radc-2021-wrapper h1.blue,
+.radc-2021-wrapper h2.blue,
+.radc-2021-wrapper h3.blue,
+.radc-2021-wrapper h4.blue,
+.radc-2021-wrapper h5.blue,
+.radc-2021-wrapper h6.blue,
+.radc-2021-wrapper p.blue,
+.radc-2021-wrapper a.blue {
+  color: #00a3e0;
+}
+
+.radc-2021-wrapper span.nowrap,
+.radc-2021-wrapper h1.nowrap,
+.radc-2021-wrapper h2.nowrap,
+.radc-2021-wrapper h3.nowrap,
+.radc-2021-wrapper h4.nowrap,
+.radc-2021-wrapper h5.nowrap,
+.radc-2021-wrapper h6.nowrap,
+.radc-2021-wrapper p.nowrap,
+.radc-2021-wrapper a.nowrap {
+  white-space: nowrap;
+}
+
+.radc-2021-wrapper span.bold,
+.radc-2021-wrapper h1.bold,
+.radc-2021-wrapper h2.bold,
+.radc-2021-wrapper h3.bold,
+.radc-2021-wrapper h4.bold,
+.radc-2021-wrapper h5.bold,
+.radc-2021-wrapper h6.bold,
+.radc-2021-wrapper p.bold,
+.radc-2021-wrapper a.bold {
+  font-weight: bold;
+}
+
+.radc-2021-wrapper div.green {
+  background-color: #86bc25;
+}
+
+.radc-2021-wrapper div.blue {
+  background-color: #00a3e0;
+}
+
+.radc-2021-wrapper .wrap-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.radc-2021-wrapper .wrap-container .header-image {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section {
+  position: relative;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section #miss-out {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: -85px;
+  left: 50%;
+  width: 130px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper {
+  color: white;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #2a2a2a;
+  padding: 3em;
+  padding-bottom: 5em;
+  height: 98%;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .job-text {
+  font-size: 1.56rem;
+  width: 90%;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .discover-jobs {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  background-color: #86bc25;
+  border: 2px solid #86bc25;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .discover-jobs:hover {
+  background: none;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #171717;
+  padding: 3em;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor .why-join {
+  font-size: 2rem;
+  position: relative;
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor .arrow {
+  margin-top: 40px;
+  -webkit-animation: arrow-big-move 1.5s infinite 0s ease-in-out;
+          animation: arrow-big-move 1.5s infinite 0s ease-in-out;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  -webkit-transform: scale(0.6) rotate(-45deg) translate(-20px, 25px);
+          transform: scale(0.6) rotate(-45deg) translate(-20px, 25px);
+}
+
+.radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor .arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: rotate(45deg) translateY(3px);
+          transform: rotate(45deg) translateY(3px);
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper {
+  position: relative;
+  background-color: #171717;
+  color: white;
+  padding: 4em;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper #job-description {
+  position: absolute;
+  display: block;
+  left: 4em;
+  top: -3em;
+  width: 250px;
+  height: auto;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2em;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p,
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul {
+  margin-bottom: 10px;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p:last-child,
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul:last-child {
+  margin: 0;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul {
+  padding-left: 2em;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul li {
+  list-style-type: disc;
+}
+
+.radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph:nth-child(2) {
+  margin-left: 5em;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 4em;
+  margin: 3px 0;
+  background-color: #86bc25;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job:hover {
+  background-color: #68921d;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-title {
+  font-weight: normal;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  background: none;
+  border: 2px solid white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link:hover {
+  background-color: white;
+  color: #86bc25;
+}
+
+.radc-2021-wrapper .wrap-container .follow-us-section {
+  margin: 5rem 0;
+}
+
+.radc-2021-wrapper .wrap-container .follow-us-section .social-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.radc-2021-wrapper .wrap-container .follow-us-section .social-icons-wrapper {
+  text-align: center;
+}
+
+.radc-2021-wrapper .wrap-container .follow-us-section .social-icons-wrapper .social-link-icon {
+  margin: 0 6px;
+}
+
+.radc-2021-wrapper .wrap-container .follow-us-section .social-icons-wrapper .social-link-icon img {
+  max-width: 40px;
+}
+
+@-webkit-keyframes arrow-small-move-2 {
+  0% {
+    -webkit-transform: rotate(-45deg) translateX(35px) translateY(20px);
+            transform: rotate(-45deg) translateX(35px) translateY(20px);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg) translateX(40px) translateY(35px);
+            transform: rotate(-45deg) translateX(40px) translateY(35px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translateX(35px) translateY(20px);
+            transform: rotate(-45deg) translateX(35px) translateY(20px);
+  }
+}
+
+@keyframes arrow-small-move-2 {
+  0% {
+    -webkit-transform: rotate(-45deg) translateX(35px) translateY(20px);
+            transform: rotate(-45deg) translateX(35px) translateY(20px);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg) translateX(40px) translateY(35px);
+            transform: rotate(-45deg) translateX(40px) translateY(35px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translateX(35px) translateY(20px);
+            transform: rotate(-45deg) translateX(35px) translateY(20px);
+  }
+}
+
+@-webkit-keyframes arrow-big-move {
+  0% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+            transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(51px) translateY(0px);
+            transform: rotate(-45deg) scale(0.7) translateX(51px) translateY(0px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+            transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+  }
+}
+
+@keyframes arrow-big-move {
+  0% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+            transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(51px) translateY(0px);
+            transform: rotate(-45deg) scale(0.7) translateX(51px) translateY(0px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+            transform: rotate(-45deg) scale(0.7) translateX(32px) translateY(-17px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
