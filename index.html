@@ -7,8 +7,19 @@
     <title>RADC Recruitment 2021</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- jQuery JS 3.1.0 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script> -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="radc-2021-wrapper">
@@ -23,17 +34,17 @@
               <h1 class="job-text"><span class="green nowrap">Junior Audit Analyst</span> <span class="nowrap">Career Opportunities</span> in our <span class="bold nowrap">Regional Audit Delivery Center</span> <span class="bold">(RADC | Deloitte)</span></h1>
               <a href="#" target="_blank" class="discover-jobs bold">Discover job opportunities</a>
             </div>
-            <div class="intro-section-anchor">
+            <a href="#info" class="intro-section-anchor">
               <span class="why-join bold">
                 Why <br />
                 <span class="nowrap">join us?</span>
               </span>
               <span class="arrow"></span>
-            </div>
+            </a>
           </div>
         </div>
         <!-- INFOGRAPHIC -->
-        <div class="infographic-container">
+        <div class="infographic-container" id="info">
           <div class="infographic-box career">
             <h2>The perfect place to <span class="bold">build a career</span></h2>
             <p>Make your mark in a <span class="bold">leading organization</span>. Deloitte serves 4 out of 5 Fortune Global 500 companies in over 150 countries and territories, with over 330,000 professionals worldwide and over 2,000 in Romania.</p>

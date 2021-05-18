@@ -3,6 +3,10 @@ body {
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .radc-2021-wrapper {
   font-family: "Open Sans", sans;
   font-weight: 300;
@@ -235,10 +239,9 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-position: center;
   background-repeat: no-repeat;
-  background-position-x: 22%;
-  background-position-y: 30%;
+  background-size: cover;
+  background-position-x: right;
   position: absolute;
   z-index: -2;
 }
@@ -291,7 +294,12 @@ body {
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:after {
   background: #046a38;
-  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+  background: linear-gradient(160deg, #046a38 50%, rgba(4, 106, 56, 0.7) 100%);
+}
+
+.radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:before {
+  background-image: url("/img/career_img.png");
+  background-position-y: bottom;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:before {
@@ -300,7 +308,7 @@ body {
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:after {
   background: #046a38;
-  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.7) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:before {
@@ -318,7 +326,7 @@ body {
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:after {
   background: #046a38;
-  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.5) 100%);
+  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.7) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:before {

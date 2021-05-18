@@ -4,6 +4,9 @@
 body {
   background-color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .radc-2021-wrapper {
   //   min-height: 3000px;
@@ -183,10 +186,9 @@ body {
           height: 100%;
           top: 0;
           left: 0;
-          background-position: center;
           background-repeat: no-repeat;
-          background-position-x: 22%;
-          background-position-y: 30%;
+          background-size: cover;
+          background-position-x: right;
           position: absolute;
           z-index: -2;
         }
@@ -232,7 +234,11 @@ body {
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+            background: linear-gradient(160deg, rgba(4, 106, 56, 1) 50%, rgba(4, 106, 56, 0.7) 100%);
+          }
+          &:before {
+            background-image: url("/img/career_img.png");
+            background-position-y: bottom;
           }
         }
         &.attention {
@@ -241,7 +247,7 @@ body {
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.7) 100%);
           }
         }
         &.growth {
@@ -259,7 +265,7 @@ body {
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.5) 100%);
+            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.7) 100%);
           }
         }
         &.recognition {
