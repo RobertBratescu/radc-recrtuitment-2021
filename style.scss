@@ -237,13 +237,13 @@ html {
             background: linear-gradient(160deg, rgba(4, 106, 56, 1) 50%, rgba(4, 106, 56, 0.7) 100%);
           }
           &:before {
-            background-image: url("/img/career_img.png");
+            background-image: url("../img/career_img.png");
             background-position-y: bottom;
           }
         }
         &.attention {
           &:before {
-            background-image: url("/img/attention_img.png");
+            background-image: url("../img/attention_img.png");
           }
           &:after {
             background: rgb(4, 106, 56);
@@ -252,7 +252,7 @@ html {
         }
         &.growth {
           &:before {
-            background-image: url("/img/growth_img.png");
+            background-image: url("../img/growth_img.png");
           }
           &:after {
             background: rgb(134, 188, 37);
@@ -261,7 +261,7 @@ html {
         }
         &.multi {
           &:before {
-            background-image: url("/img/multicultural_img.png");
+            background-image: url("../img/multicultural_img.png");
           }
           &:after {
             background: rgb(4, 106, 56);
@@ -270,7 +270,7 @@ html {
         }
         &.recognition {
           &:before {
-            background-image: url("/img/professional_img.png");
+            background-image: url("../img/professional_img.png");
           }
           &:after {
             background: rgb(134, 188, 37);

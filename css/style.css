@@ -298,12 +298,12 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:before {
-  background-image: url("/img/career_img.png");
+  background-image: url("../img/career_img.png");
   background-position-y: bottom;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:before {
-  background-image: url("/img/attention_img.png");
+  background-image: url("../img/attention_img.png");
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:after {
@@ -312,7 +312,7 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:before {
-  background-image: url("/img/growth_img.png");
+  background-image: url("../img/growth_img.png");
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:after {
@@ -321,7 +321,7 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:before {
-  background-image: url("/img/multicultural_img.png");
+  background-image: url("../img/multicultural_img.png");
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:after {
@@ -330,7 +330,7 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:before {
-  background-image: url("/img/professional_img.png");
+  background-image: url("../img/professional_img.png");
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:after {
