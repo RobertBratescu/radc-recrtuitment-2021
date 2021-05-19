@@ -82,6 +82,18 @@ html {
   font-weight: bold;
 }
 
+.radc-2021-wrapper span.big,
+.radc-2021-wrapper h1.big,
+.radc-2021-wrapper h2.big,
+.radc-2021-wrapper h3.big,
+.radc-2021-wrapper h4.big,
+.radc-2021-wrapper h5.big,
+.radc-2021-wrapper h6.big,
+.radc-2021-wrapper p.big,
+.radc-2021-wrapper a.big {
+  font-size: 1.2em;
+}
+
 .radc-2021-wrapper div.green {
   background-color: #86bc25;
 }
