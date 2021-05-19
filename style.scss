@@ -181,13 +181,21 @@ html {
     //INFOGRAPHIC
     .infographic-container {
       //   display: none !important;
-      margin: 10vh 0;
+      margin: 10vh auto;
       display: grid;
       //   grid-template: repeat(3, #{"max(#{533px}, #{46vh})"}) / repeat(2, 533px);
       grid-template: repeat(3, 534px) / repeat(2, 534px);
       grid-gap: 32px;
       @include tablet {
-        grid-template: repeat(3, auto) / repeat(2, 1fr);
+        padding: 1vw;
+        // grid-template: repeat(3, #{"clamp(#{30vh}, #{auto},#{46vh})"}) / repeat(2, 48vw);
+        grid-template: repeat(3, 48vw) / repeat(2, 48vw);
+        justify-content: center;
+        grid-gap: 2vw;
+      }
+
+      @include tablet2 {
+        grid-template: repeat(5, auto) / repeat(1, 99vw);
       }
 
       .infographic-box {
@@ -197,7 +205,9 @@ html {
 
         color: white;
         z-index: 1;
-
+        @include tablet {
+          padding: 2em;
+        }
         // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
         &:after {
@@ -238,6 +248,9 @@ html {
           &:not(:first-child) {
             margin-top: 1em;
           }
+          @include tablet2 {
+            width: calc(100% - 100px - 3em);
+          }
         }
 
         .svg-icon {
@@ -259,6 +272,11 @@ html {
             left: 4em;
             bottom: 2em;
             width: 150px;
+            @include tablet2 {
+              left: auto;
+              right: 2em;
+              width: 100px;
+            }
           }
           h2 {
             margin-bottom: 1.5em;
@@ -329,6 +347,10 @@ html {
         top: -3em;
         width: 250px;
         height: auto;
+        @include phone {
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
       .job-description-content {
         display: flex;

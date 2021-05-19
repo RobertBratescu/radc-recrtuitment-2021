@@ -268,7 +268,7 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container {
-  margin: 10vh 0;
+  margin: 10vh auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (534px)[3];
@@ -279,9 +279,22 @@ html {
 
 @media (max-width: 1149px) {
   .radc-2021-wrapper .wrap-container .infographic-container {
-    -ms-grid-rows: (auto)[3];
-    -ms-grid-columns: (1fr)[2];
-        grid-template: repeat(3, auto)/repeat(2, 1fr);
+    padding: 1vw;
+    -ms-grid-rows: (48vw)[3];
+    -ms-grid-columns: (48vw)[2];
+        grid-template: repeat(3, 48vw)/repeat(2, 48vw);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 2vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container {
+    -ms-grid-rows: (auto)[5];
+    -ms-grid-columns: (99vw)[1];
+        grid-template: repeat(5, auto)/repeat(1, 99vw);
   }
 }
 
@@ -290,6 +303,12 @@ html {
   padding: 4em;
   color: white;
   z-index: 1;
+}
+
+@media (max-width: 1149px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box {
+    padding: 2em;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box:after {
@@ -335,6 +354,12 @@ html {
   margin-top: 1em;
 }
 
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box p {
+    width: calc(100% - 100px - 3em);
+  }
+}
+
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box .svg-icon {
   position: absolute;
   opacity: 0.6;
@@ -357,6 +382,14 @@ html {
   left: 4em;
   bottom: 2em;
   width: 150px;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career .svg-icon {
+    left: auto;
+    right: 2em;
+    width: 100px;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career h2 {
@@ -430,6 +463,14 @@ html {
   top: -3em;
   width: 250px;
   height: auto;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-description-wrapper #job-description {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content {
