@@ -184,7 +184,7 @@ html {
       margin: 10vh auto;
       display: grid;
       //   grid-template: repeat(3, #{"max(#{533px}, #{46vh})"}) / repeat(2, 533px);
-      grid-template: repeat(3, 534px) / repeat(2, 534px);
+      grid-template: 480px 480px 534px / repeat(2, 534px);
       grid-gap: 32px;
       @include tablet {
         padding: 1vw;

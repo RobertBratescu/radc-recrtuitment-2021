@@ -271,9 +271,9 @@ html {
   margin: 10vh auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (534px)[3];
+  -ms-grid-rows: 480px 480px 534px;
   -ms-grid-columns: (534px)[2];
-      grid-template: repeat(3, 534px)/repeat(2, 534px);
+      grid-template: 480px 480px 534px/repeat(2, 534px);
   grid-gap: 32px;
 }
 
