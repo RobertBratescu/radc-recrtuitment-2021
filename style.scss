@@ -106,6 +106,7 @@ html {
         }
 
         .intro-section-anchor {
+          box-shadow: inset 6px 0px 16px 0px rgba(0, 0, 0, 0.75);
           position: relative;
           flex: 1;
           display: flex;
@@ -156,8 +157,9 @@ html {
     .infographic-container {
       margin: 10vh 0;
       display: grid;
-      grid-template: repeat(3, #{"max(#{500px}, #{46vh})"}) / repeat(2, 1fr);
-      grid-gap: 33px;
+      //   grid-template: repeat(3, #{"max(#{533px}, #{46vh})"}) / repeat(2, 533px);
+      grid-template: repeat(3, 533px) / repeat(2, 533px);
+      grid-gap: 34px;
 
       .infographic-box {
         // background-color: $delGreen;

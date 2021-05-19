@@ -149,6 +149,8 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor {
+  -webkit-box-shadow: inset 6px 0px 16px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 6px 0px 16px 0px rgba(0, 0, 0, 0.75);
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -208,10 +210,10 @@ html {
   margin: 10vh 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (max(500px, 46vh))[3];
-  -ms-grid-columns: (1fr)[2];
-      grid-template: repeat(3, max(500px, 46vh))/repeat(2, 1fr);
-  grid-gap: 33px;
+  -ms-grid-rows: (533px)[3];
+  -ms-grid-columns: (533px)[2];
+      grid-template: repeat(3, 533px)/repeat(2, 533px);
+  grid-gap: 34px;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box {
