@@ -356,7 +356,7 @@ html {
 
 @media (max-width: 1023px) {
   .radc-2021-wrapper .wrap-container .infographic-container .infographic-box p {
-    width: calc(100% - 100px - 3em);
+    width: 100%;
   }
 }
 
@@ -364,6 +364,17 @@ html {
   position: absolute;
   opacity: 0.6;
   z-index: 99;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box .svg-icon {
+    opacity: 0.3;
+    width: 50px;
+    top: 1em;
+    right: 1em;
+    left: auto;
+    bottom: auto;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box:not(.career) .svg-icon {
@@ -452,7 +463,7 @@ html {
 
 @media (max-width: 766px) {
   .radc-2021-wrapper .wrap-container .job-description-wrapper {
-    padding: 4em 2em;
+    padding: 4em 1em;
   }
 }
 

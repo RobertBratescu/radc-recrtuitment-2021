@@ -249,7 +249,7 @@ html {
             margin-top: 1em;
           }
           @include tablet2 {
-            width: calc(100% - 100px - 3em);
+            width: 100%;
           }
         }
 
@@ -257,12 +257,23 @@ html {
           position: absolute;
           opacity: 0.6;
           z-index: 99;
+          @include tablet2 {
+            opacity: 0.3;
+            width: 50px;
+            top: 1em;
+            right: 1em;
+            left: auto;
+            bottom: auto;
+          }
         }
         &:not(.career) {
           .svg-icon {
             right: 2em;
             bottom: 2em;
             width: 100px;
+            @include tablet2 {
+              //   display: none;
+            }
           }
         }
         &.career {
@@ -338,7 +349,7 @@ html {
       color: white;
       padding: 4em;
       @include phone {
-        padding: 4em 2em;
+        padding: 4em 1em;
       }
       #job-description {
         position: absolute;
