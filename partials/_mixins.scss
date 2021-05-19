@@ -23,7 +23,7 @@ $pFontLarge: #{"min(max(#{18px}, #{2vw}), #{20px})"};
 
 // MEDIA QUERIES
 $phone: "<del-phone";
-$tablet: "<del-tablet";
+$tablet: "<tablet-landscape";
 
 @mixin phone {
   @include media($phone) {

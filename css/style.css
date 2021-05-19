@@ -56,6 +56,20 @@ html {
   white-space: nowrap;
 }
 
+@media (max-width: 1149px) {
+  .radc-2021-wrapper span.nowrap,
+  .radc-2021-wrapper h1.nowrap,
+  .radc-2021-wrapper h2.nowrap,
+  .radc-2021-wrapper h3.nowrap,
+  .radc-2021-wrapper h4.nowrap,
+  .radc-2021-wrapper h5.nowrap,
+  .radc-2021-wrapper h6.nowrap,
+  .radc-2021-wrapper p.nowrap,
+  .radc-2021-wrapper a.nowrap {
+    white-space: initial;
+  }
+}
+
 .radc-2021-wrapper span.bold,
 .radc-2021-wrapper h1.bold,
 .radc-2021-wrapper h2.bold,
@@ -83,11 +97,19 @@ html {
 
 .radc-2021-wrapper .wrap-container .header-image {
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 60px;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .header-image {
+    margin-bottom: 1em;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .intro-section {
   position: relative;
+  width: 100%;
 }
 
 .radc-2021-wrapper .wrap-container .intro-section #miss-out {
@@ -99,6 +121,12 @@ html {
   width: 130px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .intro-section #miss-out {
+    display: none;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper {
@@ -116,6 +144,18 @@ html {
           justify-content: space-between;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
           clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
@@ -128,9 +168,24 @@ html {
   height: 98%;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job {
+    -webkit-clip-path: none;
+            clip-path: none;
+    padding: 2em;
+    text-align: center;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .job-text {
   font-size: 1.56rem;
   width: 90%;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .job-text {
+    width: 100%;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-job .discover-jobs {
@@ -174,6 +229,12 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor {
+    display: none;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .intro-section .intro-section-wrapper .intro-section-anchor .why-join {
   font-size: 2rem;
   position: relative;
@@ -210,10 +271,18 @@ html {
   margin: 10vh 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (533px)[3];
-  -ms-grid-columns: (533px)[2];
-      grid-template: repeat(3, 533px)/repeat(2, 533px);
-  grid-gap: 34px;
+  -ms-grid-rows: (534px)[3];
+  -ms-grid-columns: (534px)[2];
+      grid-template: repeat(3, 534px)/repeat(2, 534px);
+  grid-gap: 32px;
+}
+
+@media (max-width: 1149px) {
+  .radc-2021-wrapper .wrap-container .infographic-container {
+    -ms-grid-rows: (auto)[3];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(3, auto)/repeat(2, 1fr);
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box {
@@ -348,6 +417,12 @@ html {
   padding: 4em;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-description-wrapper {
+    padding: 4em 2em;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .job-description-wrapper #job-description {
   position: absolute;
   display: block;
@@ -371,6 +446,18 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph {
@@ -403,6 +490,13 @@ html {
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph:nth-child(2) {
   margin-left: 5em;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph:nth-child(2) {
+    margin-left: auto;
+    margin-bottom: auto;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .job-cta-wrapper {
@@ -442,6 +536,22 @@ html {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .job-cta-wrapper .job:hover {
   background-color: #68921d;
 }
@@ -450,11 +560,22 @@ html {
   font-weight: normal;
 }
 
+@media (max-width: 1149px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-title {
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-title {
+    margin-right: 0;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link {
   display: inline-block;
   font-size: 1.2rem;
   padding: 0.6em 1.2em;
-  margin-top: 1em;
   background: none;
   border: 2px solid white;
   -webkit-transition: all 0.3s ease;
@@ -462,6 +583,13 @@ html {
   width: 30%;
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link {
+    margin-top: 1.5em;
+    width: 70%;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link:hover {
