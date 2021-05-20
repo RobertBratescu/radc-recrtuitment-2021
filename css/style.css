@@ -95,6 +95,10 @@ html {
   font-size: 1.12em;
 }
 
+.radc-2021-wrapper h2 {
+  margin: 0;
+}
+
 .radc-2021-wrapper div.green {
   background-color: #86bc25;
 }
@@ -543,6 +547,7 @@ html {
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p,
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul {
   margin-bottom: 10px;
+  padding: 0;
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p:last-child,
