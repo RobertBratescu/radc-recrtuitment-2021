@@ -6,6 +6,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 .radc-2021-wrapper {
@@ -184,7 +185,8 @@ html {
     //INFOGRAPHIC
     .infographic-container {
       //   display: none !important;
-      margin: 10vh auto;
+      margin: 100px auto;
+      margin-top: 80px;
       display: grid;
       //   grid-template: repeat(3, #{"max(#{533px}, #{46vh})"}) / repeat(2, 533px);
       grid-template: 480px 480px 534px / repeat(2, 534px);
@@ -349,12 +351,15 @@ html {
       //   display: none !important;
       margin-top: 10vh;
       position: relative;
-      background-color: $darkGrey;
+      background-color: black;
+      border: 3px solid $delGreen;
       color: white;
       padding: 4em;
       padding-top: 4.5em;
       @include phone {
         padding: 4em 1em;
+        margin-left: 1em;
+        margin-right: 1em;
       }
       #job-description {
         position: absolute;
@@ -391,9 +396,19 @@ html {
             }
           }
           ul {
-            padding-left: 2em;
+            // padding-left: 2em;
             li {
-              list-style-type: disc;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: flex-start;
+              align-items: center;
+              background-color: $darkGrey;
+              margin-bottom: 0.5em;
+              padding: 1em;
+              .bullet-img {
+                width: 1em;
+                padding-right: 1em;
+              }
             }
           }
           &:nth-child(2) {
@@ -414,26 +429,28 @@ html {
       flex-flow: column nowrap;
       width: 100%;
       position: relative;
+      margin-top: 4em;
       .jobs-intro-text {
-        max-width: 70%;
-        color: white;
+        background-color: $darkGrey;
+        position: relative;
+        color: #989a9d;
         text-align: left;
         font-weight: 300;
-        font-size: 1.4rem;
+        font-size: 1rem;
         line-height: 1.3;
 
-        padding: 2em;
-        padding-left: 1em;
-        span {
-          font-size: 2.8rem;
+        padding: 3em;
+        padding-right: 12em;
+        .h2-text {
+          font-size: 2.3rem;
+          margin-bottom: 0.8em;
           display: block;
+          color: white;
+          @include phone {
+          }
         }
         @include phone {
-          padding: 1em;
-          width: 100%;
-          span {
-            font-size: 2.2rem;
-          }
+          padding: 2em;
         }
       }
       .job {
@@ -444,11 +461,17 @@ html {
         align-items: center;
 
         padding: 2em 4em;
-        margin: 3px 0;
         background-color: $delGreen;
         color: white;
 
         transition: all 0.3s ease;
+        &:not(:first-child) {
+          margin: 3px 0;
+          margin-top: 0 !important;
+        }
+        &:first-child {
+          margin-bottom: 3px;
+        }
         @include phone {
           flex-flow: column nowrap;
           justify-content: center;
