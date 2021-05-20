@@ -239,6 +239,7 @@ html {
           background-position-x: right;
           position: absolute;
           z-index: -2;
+          filter: grayscale(100%);
         }
 
         h2 {
@@ -303,7 +304,7 @@ html {
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(160deg, rgba(4, 106, 56, 1) 50%, rgba(4, 106, 56, 0.7) 100%);
+            background: linear-gradient(160deg, rgba(4, 106, 56, 1) 30%, rgba(4, 106, 56, 0.7) 100%);
           }
           &:before {
             background-image: url("../img/career_img.png");
@@ -316,7 +317,7 @@ html {
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.7) 100%);
+            background: linear-gradient(150deg, rgba(4, 106, 56, 1) 35%, rgba(4, 106, 56, 0.7) 100%);
           }
         }
         &.growth {

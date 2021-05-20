@@ -352,6 +352,8 @@ html {
   background-position-x: right;
   position: absolute;
   z-index: -2;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box h2 {
@@ -428,7 +430,7 @@ html {
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:after {
   background: #046a38;
-  background: linear-gradient(160deg, #046a38 50%, rgba(4, 106, 56, 0.7) 100%);
+  background: linear-gradient(160deg, #046a38 30%, rgba(4, 106, 56, 0.7) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:before {
@@ -442,7 +444,7 @@ html {
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:after {
   background: #046a38;
-  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.7) 100%);
+  background: linear-gradient(150deg, #046a38 35%, rgba(4, 106, 56, 0.7) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:before {
