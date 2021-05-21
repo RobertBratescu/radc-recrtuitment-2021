@@ -7,6 +7,9 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 18px;
+  @include phone {
+    font-size: 16px;
+  }
 }
 
 .radc-2021-wrapper {
@@ -248,7 +251,9 @@ html {
           margin-bottom: 0.6em;
           line-height: 1.2;
           z-index: 99;
-          // margin: 0;
+          @include phone {
+            font-size: 2rem;
+          }
         }
         p {
           width: 80%;
@@ -513,6 +518,18 @@ html {
           &:hover {
             background-color: white;
             color: $delGreen;
+          }
+        }
+
+        &.desktop-link {
+          @include phone {
+            display: none;
+          }
+        }
+        &.mobile-link {
+          display: none;
+          @include phone {
+            display: flex;
           }
         }
       }

@@ -8,6 +8,12 @@ html {
   font-size: 18px;
 }
 
+@media (max-width: 766px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 .radc-2021-wrapper {
   font-family: "Open Sans", sans;
   font-weight: 300;
@@ -362,6 +368,12 @@ html {
   margin-bottom: 0.6em;
   line-height: 1.2;
   z-index: 99;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box h2 {
+    font-size: 2rem;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box p {
@@ -722,6 +734,24 @@ html {
 .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-link:hover {
   background-color: white;
   color: #86bc25;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job.desktop-link {
+    display: none;
+  }
+}
+
+.radc-2021-wrapper .wrap-container .job-cta-wrapper .job.mobile-link {
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-cta-wrapper .job.mobile-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .follow-us-section {
