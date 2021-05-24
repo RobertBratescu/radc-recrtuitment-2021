@@ -1,4 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+.htmlfragment {
+  padding: 0 p;
+  padding-font-size: inherit;
+  padding-line-height: inherit;
+}
+
+h2 {
+  font-size: inherit;
+}
+
+p {
+  line-height: inherit;
+}
+
+#footer,
+#cmp-related-tags,
+.cmp-footer__links,
+.cmp-footer__top-bar,
+#footer__utility-bar {
+  display: none;
+}
+
+.branded-landing-page-content {
+  margin: 90px auto 90px;
+}
+
 body {
   background-color: black;
 }
@@ -118,15 +144,83 @@ html {
   margin: 0 auto;
 }
 
-.radc-2021-wrapper .wrap-container .header-image {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 60px;
+.radc-2021-wrapper .wrap-container .header-section {
+  padding: 20px 0;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1149px) {
+  .radc-2021-wrapper .wrap-container .header-section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 @media (max-width: 766px) {
-  .radc-2021-wrapper .wrap-container .header-image {
-    margin-bottom: 1em;
+  .radc-2021-wrapper .wrap-container .header-section {
+    padding-bottom: 50px;
+  }
+}
+
+.radc-2021-wrapper .wrap-container .header-section .subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .header-section .subheader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.radc-2021-wrapper .wrap-container .header-section .subheader h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.radc-2021-wrapper .wrap-container .header-section .subheader.bottom {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.radc-2021-wrapper .wrap-container .header-section .subheader.bottom h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.radc-2021-wrapper .wrap-container .header-section .header-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .header-section .header-image {
+    padding: 2em 0;
   }
 }
 
@@ -295,9 +389,9 @@ html {
   margin-top: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 480px 480px 534px;
+  -ms-grid-rows: 480px 480px 550px;
   -ms-grid-columns: (534px)[2];
-      grid-template: 480px 480px 534px/repeat(2, 534px);
+      grid-template: 480px 480px 550px/repeat(2, 534px);
   grid-gap: 32px;
 }
 
@@ -316,6 +410,7 @@ html {
 
 @media (max-width: 1023px) {
   .radc-2021-wrapper .wrap-container .infographic-container {
+    margin-top: 50px;
     -ms-grid-rows: (auto)[5];
     -ms-grid-columns: (99vw)[1];
         grid-template: repeat(5, auto)/repeat(1, 99vw);
@@ -358,8 +453,6 @@ html {
   background-position-x: right;
   position: absolute;
   z-index: -2;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box h2 {
@@ -437,53 +530,80 @@ html {
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career h2 {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.2rem;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:after {
   background: #046a38;
-  background: linear-gradient(160deg, #046a38 30%, rgba(4, 106, 56, 0.7) 100%);
+  background: linear-gradient(160deg, #046a38 61%, rgba(4, 106, 56, 0) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:before {
-  background-image: url("../img/career_img.png");
+  background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/career_img.png");
+  background-position-x: center;
   background-position-y: bottom;
+  background-size: 141% 47%;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.career:before {
+    background-size: cover;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:before {
-  background-image: url("../img/attention_img.png");
+  background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/attention_img.png");
+  background-position-x: center;
+  background-position-y: 100px;
+  background-size: cover;
+}
+
+@media (max-width: 1023px) {
+  .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:before {
+    background-position-y: center;
+    background-size: 120%;
+  }
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.attention:after {
   background: #046a38;
-  background: linear-gradient(150deg, #046a38 35%, rgba(4, 106, 56, 0.7) 100%);
+  background: linear-gradient(170deg, #046a38 45%, rgba(4, 106, 56, 0) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:before {
-  background-image: url("../img/growth_img.png");
+  background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/growth_img.png");
+  background-size: 150%;
+  background-position-x: center;
+  background-position-y: 43%;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.growth:after {
   background: #86bc25;
-  background: linear-gradient(130deg, #86bc25 40%, rgba(134, 188, 37, 0.5) 100%);
+  background: linear-gradient(143deg, #86bc25 40%, rgba(134, 188, 37, 0) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:before {
-  background-image: url("../img/multicultural_img.png");
+  background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/multicultural_img.png");
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: cover;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.multi:after {
   background: #046a38;
-  background: linear-gradient(130deg, #046a38 40%, rgba(4, 106, 56, 0.7) 100%);
+  background: linear-gradient(138deg, #046a38 41%, rgba(4, 106, 56, 0.4) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:before {
-  background-image: url("../img/professional_img.png");
+  background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/professional_img.png");
+  background-position-x: 20%;
+  background-position-y: bottom;
+  background-size: cover;
 }
 
 .radc-2021-wrapper .wrap-container .infographic-container .infographic-box.recognition:after {
   background: #86bc25;
-  background: linear-gradient(130deg, #86bc25 40%, rgba(134, 188, 37, 0.5) 100%);
+  background: linear-gradient(147deg, #86bc25 50%, rgba(134, 188, 37, 0) 100%);
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper {
@@ -499,6 +619,7 @@ html {
 @media (max-width: 766px) {
   .radc-2021-wrapper .wrap-container .job-description-wrapper {
     padding: 4em 1em;
+    padding-bottom: 1em;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -558,10 +679,17 @@ html {
           flex: 1;
 }
 
+@media (max-width: 766px) {
+  .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph {
+    margin-bottom: 1rem;
+  }
+}
+
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p,
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul {
   margin-bottom: 10px;
   padding: 0;
+  font-size: 1rem;
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph p:last-child,
@@ -591,6 +719,8 @@ html {
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph ul li .bullet-img {
   width: 1em;
   padding-right: 1em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .radc-2021-wrapper .wrap-container .job-description-wrapper .job-description-content .job-description-paragraph:nth-child(2) {
@@ -697,6 +827,7 @@ html {
 
 .radc-2021-wrapper .wrap-container .job-cta-wrapper .job .job-title {
   font-weight: normal;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1149px) {
@@ -722,6 +853,8 @@ html {
   width: 30%;
   text-align: center;
   font-weight: bold;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media (max-width: 766px) {
@@ -756,6 +889,7 @@ html {
 
 .radc-2021-wrapper .wrap-container .follow-us-section {
   margin: 5rem 0;
+  margin-bottom: 1rem;
 }
 
 .radc-2021-wrapper .wrap-container .follow-us-section .social-title {

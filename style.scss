@@ -1,5 +1,6 @@
 // @use '/partials/site-setup';
 @import "partials/mixins";
+@import "partials/site-setup";
 
 body {
   background-color: black;
@@ -67,12 +68,50 @@ html {
     margin: 0 auto;
 
     //HEADER IMAGE
-    .header-image {
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 60px;
+    .header-section {
+      padding: 20px 0;
+      padding-bottom: 100px;
+      @include tablet {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
       @include phone {
-        margin-bottom: 1em;
+        padding-bottom: 50px;
+      }
+      .subheader {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include tablet2 {
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        h2 {
+          color: white;
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+        &.bottom {
+          justify-content: space-between;
+          h2 {
+            font-size: 2rem;
+            line-height: 1.3;
+            @include tablet2 {
+            }
+          }
+        }
+      }
+      .header-image {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        @include tablet2 {
+          padding: 2em 0;
+        }
       }
     }
     //INTRO SECTION
@@ -194,7 +233,7 @@ html {
       margin-top: 80px;
       display: grid;
       //   grid-template: repeat(3, #{"max(#{533px}, #{46vh})"}) / repeat(2, 533px);
-      grid-template: 480px 480px 534px / repeat(2, 534px);
+      grid-template: 480px 480px 550px / repeat(2, 534px);
       grid-gap: 32px;
       @include tablet {
         padding: 1vw;
@@ -205,6 +244,8 @@ html {
       }
 
       @include tablet2 {
+        margin-top: 50px;
+
         grid-template: repeat(5, auto) / repeat(1, 99vw);
       }
 
@@ -242,7 +283,7 @@ html {
           background-position-x: right;
           position: absolute;
           z-index: -2;
-          filter: grayscale(100%);
+          // filter: grayscale(100%);
         }
 
         h2 {
@@ -305,51 +346,72 @@ html {
             }
           }
           h2 {
-            margin-bottom: 1.5em;
+            margin-bottom: 2.2rem;
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(160deg, rgba(4, 106, 56, 1) 30%, rgba(4, 106, 56, 0.7) 100%);
+            background: linear-gradient(160deg, #046a38 61%, rgba(4, 106, 56, 0) 100%);
           }
           &:before {
-            background-image: url("../img/career_img.png");
+            background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/career_img.png");
+            background-position-x: center;
             background-position-y: bottom;
+            background-size: 141% 47%;
+            @include tablet2 {
+              background-size: cover;
+            }
           }
         }
         &.attention {
           &:before {
-            background-image: url("../img/attention_img.png");
+            background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/attention_img.png");
+            background-position-x: center;
+            background-position-y: 100px;
+            background-size: cover;
+            @include tablet2 {
+              background-position-y: center;
+              background-size: 120%;
+            }
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(150deg, rgba(4, 106, 56, 1) 35%, rgba(4, 106, 56, 0.7) 100%);
+            background: linear-gradient(170deg, #046a38 45%, rgba(4, 106, 56, 0) 100%);
           }
         }
         &.growth {
           &:before {
-            background-image: url("../img/growth_img.png");
+            background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/growth_img.png");
+            background-size: 150%;
+            background-position-x: center;
+            background-position-y: 43%;
           }
           &:after {
             background: rgb(134, 188, 37);
-            background: linear-gradient(130deg, rgba(134, 188, 37, 1) 40%, rgba(134, 188, 37, 0.5) 100%);
+            background: linear-gradient(143deg, #86bc25 40%, rgba(134, 188, 37, 0) 100%);
           }
         }
         &.multi {
           &:before {
-            background-image: url("../img/multicultural_img.png");
+            background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/multicultural_img.png");
+            background-position-x: left;
+            background-position-y: bottom;
+            background-size: cover;
           }
           &:after {
             background: rgb(4, 106, 56);
-            background: linear-gradient(130deg, rgba(4, 106, 56, 1) 40%, rgba(4, 106, 56, 0.7) 100%);
+            background: linear-gradient(138deg, #046a38 41%, rgba(4, 106, 56, 0.4) 100%);
           }
         }
         &.recognition {
           &:before {
-            background-image: url("../img/professional_img.png");
+            background-image: url("https://www2.deloitte.com/content/dam/html/ro/radc-recruit-2021/img/professional_img.png");
+            background-position-x: 20%;
+            background-position-y: bottom;
+            background-size: cover;
           }
           &:after {
             background: rgb(134, 188, 37);
-            background: linear-gradient(130deg, rgba(134, 188, 37, 1) 40%, rgba(134, 188, 37, 0.5) 100%);
+            background: linear-gradient(147deg, #86bc25 50%, rgba(134, 188, 37, 0) 100%);
           }
         }
       }
@@ -367,6 +429,7 @@ html {
       padding-top: 4.5em;
       @include phone {
         padding: 4em 1em;
+        padding-bottom: 1em;
         margin-left: 1em;
         margin-right: 1em;
       }
@@ -397,10 +460,14 @@ html {
           font-weight: normal;
           flex: 1;
           // margin-bottom: 2em;
+          @include phone {
+            margin-bottom: 1rem;
+          }
           p,
           ul {
             margin-bottom: 10px;
             padding: 0;
+            font-size: 1rem;
             &:last-child {
               margin: 0;
             }
@@ -418,6 +485,7 @@ html {
               .bullet-img {
                 width: 1em;
                 padding-right: 1em;
+                box-sizing: content-box;
               }
             }
           }
@@ -494,6 +562,7 @@ html {
 
         .job-title {
           font-weight: normal;
+          font-size: 1.5rem;
           @include tablet {
             margin-right: 1em;
           }
@@ -511,6 +580,7 @@ html {
           width: 30%;
           text-align: center;
           font-weight: bold;
+          box-sizing: content-box;
           @include phone {
             margin-top: 1.5em;
             width: 70%;
@@ -539,6 +609,7 @@ html {
     .follow-us-section {
       //   display: none !important;
       margin: 5rem 0;
+      margin-bottom: 1rem;
       .social-title {
         font-size: 1.3rem;
         font-weight: bold;
